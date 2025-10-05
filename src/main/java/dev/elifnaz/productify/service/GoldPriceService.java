@@ -15,7 +15,7 @@ import java.util.Map;
 public class GoldPriceService {
 
     private static final double FALLBACK_GOLD_PRICE_PER_GRAM = 124.0;
-    private static final long CACHE_DURATION_MS = 3600000; // 1 hour
+    private static final long CACHE_DURATION_MS = 1 * 60 * 1000; // 1 minutes
     private static final String PRICE_KEY = "price_gram_24k";
 
     private final RestTemplate restTemplate = new RestTemplate();
